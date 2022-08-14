@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image To PDF Converter</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="form">
+            <form action="" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <input type="text" name="filename" id="" placeholder="Enter Name of File">
+                <input type="file" name="images" id="" multiple >
+                <input type="submit" value="convert">
+
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
